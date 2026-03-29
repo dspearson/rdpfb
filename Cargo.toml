@@ -1,0 +1,22 @@
+[package]
+name = "rdpfb"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.87"
+authors = ["Dominic Pearson <dsp@technoanimal.net>"]
+license = "ISC"
+description = "A reusable RDP framebuffer server library"
+repository = "https://github.com/dspearson/rdpfb"
+
+[dependencies]
+rustls = "0.23"
+tokio-rustls = "0.26"
+rustls-pemfile = "2.1"
+bytes = "1.5"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+tracing = "0.1"
+image = "0.25"
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
